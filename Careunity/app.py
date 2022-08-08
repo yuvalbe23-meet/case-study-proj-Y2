@@ -26,6 +26,31 @@ db= firebase.database()
 if db.child("WaitingList").get().val() is None:
     db.child("WaitingList").set(0)
 
+#HOME
+@app.route('/', methods=['GET','POST'])
+def home():
+    return render_template("index.html") 
+
+#ABOUT
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+#DEMO 
+@app.route('/demo')
+def demo():
+    return render_template('demo.html')
+
+#FEATURES
+@app.route('/features')
+def features():
+    return render_template('features.html')
+
+
+
+
+
+
 
 
 
@@ -35,9 +60,6 @@ def signout():
     auth.current_user = None
     return redirect(url_for('signin'))
 
-@app.route('/', methods=['GET','POST'])
-def home():
-    return render_template("index.html")
 
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():
@@ -57,7 +79,6 @@ def signin():
     return render_template("signin.html")
 
    
-
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
