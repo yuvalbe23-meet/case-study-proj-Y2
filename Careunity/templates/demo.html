@@ -25,9 +25,9 @@
   <!-- datepicker -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="static/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="static/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -48,16 +48,16 @@
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="/">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="/about"> About </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html"> Services </a>
+                <a class="nav-link" href="/features"> Features </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="appointment.html"> Appointment <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="/demo"> Demo <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <form class="form-inline ">
@@ -81,27 +81,20 @@
           <form>
             <h4>
               <span class="design_dot"></span>
-              BOOK APPOINTMENT
+              BOOK A DEMO
             </h4>
             <div class="form-row ">
               <div class="form-group col-lg-4">
-                <label for="inputPatientName">Patient Name </label>
+                <label for="inputPatientName"> Name </label>
                 <input type="text" class="form-control" id="inputPatientName" placeholder="">
               </div>
+
               <div class="form-group col-lg-4">
-                <label for="inputDoctorName">Doctor's Name</label>
-                <select name="" class="form-control wide" id="inputDoctorName">
-                  <option value="Normal distribution ">Doctor Name 1</option>
-                  <option value="Normal distribution ">Doctor Name 2 </option>
-                  <option value="Normal distribution ">Doctor Name 3 </option>
-                </select>
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="inputDepartmentName">Department's Name</label>
+                <label for="inputDepartmentName">Reason for booking</label>
                 <select name="" class="form-control wide" id="inputDepartmentName">
-                  <option value="Normal distribution ">Cardiology </option>
-                  <option value="Normal distribution ">Surgery </option>
-                  <option value="Normal distribution ">First Aid </option>
+                  <option value="Normal distribution ">School/University work</option>
+                  <option value="Normal distribution ">Purchasing reasons </option>
+                  <option value="Normal distribution ">Other</option>
                 </select>
               </div>
             </div>
@@ -111,21 +104,12 @@
                 <input type="text" class="form-control" id="inputPhone" placeholder="">
               </div>
               <div class="form-group col-lg-4">
-                <label for="inputSymptoms">Symptoms</label>
+                <label for="inputSymptoms">Email</label>
                 <input type="text" class="form-control" id="inputSymptoms" placeholder="">
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="inputDate">Choose Date </label>
-                <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
-                  <input type="text" class="form-control" readonly>
-                  <span class="input-group-addon date_icon">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </span>
-                </div>
               </div>
             </div>
             <div class="btn-box">
-              <button type="submit" class="btn ">Submit Now</button>
+              <button type="submit" class="btn ">Book Now</button>
             </div>
           </form>
         </div>
@@ -156,16 +140,16 @@
             </h5>
             <ul class="navbar-nav  ">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="/about"> About </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html"> Services </a>
+                <a class="nav-link" href="/features"> Features </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="appointment.html"> Appointment </a>
+                <a class="nav-link" href="/demo"> Demo </a>
               </li>
             </ul>
           </div>
@@ -224,15 +208,15 @@
   </footer>
   <!-- footer section -->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <script src="static/js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
   <!-- datepicker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="static/js/custom.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>

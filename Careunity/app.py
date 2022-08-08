@@ -32,17 +32,17 @@ def home():
     return render_template("index.html") 
 
 #ABOUT
-@app.route('/about')
+@app.route('/about' methods=['GET','POST'])
 def about():
     return render_template('about.html')
 
 #DEMO 
-@app.route('/demo')
+@app.route('/demo', methods=['GET','POST'])
 def demo():
     return render_template('demo.html')
 
 #FEATURES
-@app.route('/features')
+@app.route('/features', methods=['GET','POST'])
 def features():
     return render_template('features.html')
 
