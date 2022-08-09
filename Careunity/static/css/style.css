@@ -787,5 +787,59 @@ a:focus {
   color: inherit;
 }
 
+
+#a:hover:after{
+
+  content: "Emergancy Button";
+}
+
+#a:hover span{
+  display: none;
+}
+
+
+#b:hover:after{
+
+  content: "Order Food";
+}
+
+#b:hover span{
+  display: none;
+}
+
+
+#c:hover:after{
+
+  content: "Leave the Room";
+}
+
+#c:hover span{
+  display: none;
+}
+
+
+#d:hover:after{
+
+  content: "Help with Toilet";
+}
+
+#d:hover span{
+  display: none;
+}
+
+#e:hover:after{
+
+  content: "General Medical Help";
+}
+
+#e:hover span{
+  display: none;
+}
+
+
+
+
+
+
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */

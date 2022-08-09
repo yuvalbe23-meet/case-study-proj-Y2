@@ -34,13 +34,16 @@ def home():
         email= request.form['email']
 
         user={"name": request.form['name'],"email": request.form['email'],"phone": request.form['phone']}
-        db.child("Users").push(user)
+        login_session['user'] = db.child("Users").push(user)
+        print(login_session['user'])
         try: 
-            
-            return redirect(url_for('demo'))
+            if request.form['email'] is not "" and request.form['name'] is not "" and request.form['phone'] is not "" :
+
+                return redirect(url_for('demo'))
         except:
             eror="Not Working"
-    return render_template("index.html",)
+   
+    return render_template("index.html")
 
 #ABOUT
 @app.route('/about' ,methods=['GET','POST'])
@@ -50,7 +53,8 @@ def about():
 #DEMO 
 @app.route('/demo', methods=['GET','POST'])
 def demo():
-    return render_template('demo.html')
+    test=db.child("Users").child(login_session['user']['name']).get().val()
+    return render_template('demo.html',username= test['name'])
 
 #FEATURES
 @app.route('/features', methods=['GET','POST'])
