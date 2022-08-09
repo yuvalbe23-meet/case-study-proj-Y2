@@ -545,39 +545,52 @@
 
   <!-- book section -->
 
-  <section class="book_section layout_padding">
+    <section class="book_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col">
-          <form>
+          <form action="/" method="POST">
             <h4>
               <span class="design_dot"></span>
-              SIGN IN FOR DEMO
+              BOOK A DEMO
+              
             </h4>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPatientName"> Name </label>
-                <input type="text" class="form-control" id="inputPatientName" placeholder="">
-              </div> 
+                <input type="text" name="name" class="form-control" id="inputPatientName" placeholder="">
+              </div>
+
+              <div class="form-group col-lg-4">
+                <label for="inputDepartmentName">Reason for booking</label>
+                <select name="" class="form-control wide" id="inputDepartmentName">
+                  <option value="Normal distribution ">School/University work</option>
+                  <option value="Normal distribution ">Purchasing reasons </option>
+                  <option value="Normal distribution ">Other</option>
+                </select>
+              </div>
             </div>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPhone">Phone Number</label>
-                <input type="text" class="form-control" id="inputPhone" placeholder="">
+                <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="">
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputSymptoms">Email</label>
-                <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                <input type="text" name="email" class="form-control" id="inputSymptoms" placeholder="">
               </div>
             </div>
             <div class="btn-box">
-              <button type="submit" class="btn"> <a href="/demo"> Book Now  </button> </a>
+              <button type="submit" class="btn ">Book Now</button>
+              
             </div>
+
           </form>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- end book section -->
 
