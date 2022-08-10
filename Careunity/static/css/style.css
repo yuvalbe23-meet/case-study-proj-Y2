@@ -790,7 +790,7 @@ a:focus {
 
 #a:hover:after{
 
-  content: "Emergancy Button";
+  content: "Emergency Button";
 }
 
 #a:hover span{
